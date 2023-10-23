@@ -107,6 +107,7 @@
         <button type="button"
           class="mr-3 inline-block px-3 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
           Log In</button>
+        <!-- Main modal -->
         <button type="button"
           class="inline-block px-3 py-2 border-2 bg-green-500 border-green-500 text-white font-medium text-xs leading-tight uppercase rounded-lg hover:bg-green-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
           Sign Up
@@ -139,19 +140,10 @@
       <div class="flex gap-x-8">
         <span class="cursor-pointer py-1 px-auto text-sm font-medium hover:text-green-500">Best seller</span>
         <span class="cursor-pointer py-1 px-auto text-sm font-medium hover:text-green-500">New Releases</span>
-        <span
-          class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500">Books</span>
-        <span
-          class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500">Computers</span>
-        <span
-          class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500">Fashion</span>
-        <span
-          class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500">Health</span>
-        <span
-          class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500">Pharmacy</span>
-        <span
-          class="cursor-pointer hidden focus:underline lg:block py-1 px-2 text-sm font-medium hover:text-green-500">Toys &
-          Games</span>
+        <span class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500"
+          v-for="(categori) in getCategori.slice(0, 5)" :key="categori.id">
+          {{ categori.name }}
+        </span>
       </div>
     </div>
   </header>
@@ -267,21 +259,36 @@
           </svg>
           </a>
           </li> -->
-      <li>
-        <div
-          class="items-center mt-3 block md:hidden md:w-auto md:text-sm md:items-center md:justify-center lg:hidden lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
-          <button type="button"
-            class="mr-3 inline-block px-3 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-            Log In</button>
-          <button type="button"
-            class="inline-block px-3 py-2 border-2 bg-green-500 border-green-500 text-white font-medium text-xs leading-tight uppercase rounded-lg hover:bg-green-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-            Sign Up
-          </button>
-        </div>
-      </li>
-    </ul>
+        <li>
+          <div
+            class="items-center mt-3 block md:hidden md:w-auto md:text-sm md:items-center md:justify-center lg:hidden lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
+            <button type="button"
+              class="mr-3 inline-block px-3 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              Log In</button>
+            <button type="button"
+              class="inline-block px-3 py-2 border-2 bg-green-500 border-green-500 text-white font-medium text-xs leading-tight uppercase rounded-lg hover:bg-green-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              Sign Up
+            </button>
+          </div>
+        </li>
+      </ul>
 
-  </div>
-</nav>
+    </div>
+  </nav>
 </template>
+<script>
+import { mapGetters, mapActions } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters('kategori', ['getCategori']),
+  },
+  methods: {
+    ...mapActions('kategori', ['fetchCategori']),
+  },
+  created() {
+    this.fetchCategori();
+  },
+}
+</script>
 

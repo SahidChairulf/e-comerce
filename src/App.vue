@@ -1,8 +1,8 @@
 <template>
     <NavbarCompponents></NavbarCompponents>
     <RouterView></RouterView>
-    <NavbarMobileCompponentsVue class=""></NavbarMobileCompponentsVue>
-    <FooterCompponentVue class=""></FooterCompponentVue>
+    <NavbarMobileCompponentsVue></NavbarMobileCompponentsVue>
+    <FooterCompponentVue></FooterCompponentVue>
 </template>
 <script setup>
   import FooterCompponentVue from './components/FooterCompponent.vue';

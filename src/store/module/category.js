@@ -13,8 +13,8 @@ const categori = {
     async fetchCategori({ commit }) {
       try {
         const data = await axios.get("https://ecommerce.olipiskandar.com/api/v1/all-categories");
-        // console.log(data.data)
-        commit("SET_CATEGORIES", data.data);
+        // console.log(data.data['data'])
+        commit("SET_CATEGORIES", data.data['data']);
       } catch (error) {
         alert(error);
         console.log(error);

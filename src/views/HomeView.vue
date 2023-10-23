@@ -1,4 +1,5 @@
 <template>
+  <!-- Carousel banner -->
   <div id="default-carousel" class="relative w-full mt-3 lg:px-6 px-3 items-center" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative lg:h-96 md:h-60 h-28 overflow-hidden rounded-lg">
@@ -71,6 +72,7 @@
       </span>
     </button>
   </div>
+  <!-- End Caraousel banner -->
   <hr class="w-screen h-1 mx-auto my-4 lg:my-6 bg-gray-100 border-0 rounded md:my-4 dark:bg-gray-700">
   <section class="container md:mx-auto lg:mx-auto menu-xs bg-white lg:md:rounded-lg py-2 px-3">
     <!-- title -->
@@ -107,12 +109,10 @@
         </button>
       </div>
     </div>
-    
     <!-- cards -->
-    <div v-if="getCategori.data == undefined">
-    </div>
-    <div class="relative mt-0 py-6 lg:py-6 md:py-6 carousel rounded-box w-full h-40 lg:h-full md:h-26" v-else>
-      <ul class="-m-3.5 flex h-full" v-for="(categori) in getCategori.data.slice(0,10)" :key="categori.id">
+    
+    <div class="relative mt-0 py-6 lg:py-6 md:py-6 carousel rounded-box w-full h-40 lg:h-full md:h-26">
+      <ul class="-m-3.5 flex h-full" v-for="(categori) in getCategori.slice(0, 10)" :key="categori.id">
         <li
           class="m-3.5 carousel-item cursor-pointer lg:h-52 md:h-32 lg:w-40 md:w-40 h-24 w-24 rounded-xl flex flex-col items-center justify-center text-center duration-300">
           <img class="max-h-20"
@@ -124,6 +124,7 @@
     </div>
   </section>
   <hr class="w-screen h-1 mx-auto my-3 lg:my-6 bg-gray-100 border-0 rounded md:my-4 dark:bg-gray-700">
+  <!-- Banner -->
   <div class="flex flex-row mt-6 w-full justify-center">
     <div class="relative">
       <img class="w-full lg:h-96 md:h-60 h-28"
@@ -131,6 +132,7 @@
         alt="sofa" />
     </div>
   </div>
+  <!-- End Banner -->
   <hr class="w-screen h-1 mx-auto my-4 lg:my-6 bg-gray-100 border-0 rounded md:my-4 dark:bg-gray-700">
   <section class="container md:mx-auto lg:mx-auto bg-white py-2 px-3 mt-3">
     <!-- title -->
@@ -168,6 +170,7 @@
       </div>
     </div>
   </section>
+  <!-- Product Popular With Skeleton -->
   <div v-if="getProducts.data == undefined">
     <section class="bg-white dark:bg-gray-900">
       <div class="container px-6 py-10 mx-auto animate-pulse">
@@ -207,10 +210,12 @@
       </div>
     </section>
   </div>
-  <div class="grid grid-cols-2 px-6 md:grid-cols-4 lg:grid-cols-5 lg:px-5 lg:mt-5 drop-shadow-lg gap-x-4 gap-y-4 lg:gap-x-2 lg:gap-y-3" v-else>
+  <div
+    class="grid grid-cols-2 px-6 md:grid-cols-4 lg:grid-cols-5 lg:px-5 lg:mt-5 drop-shadow-lg gap-x-4 gap-y-4 lg:gap-x-2 lg:gap-y-3"
+    v-else>
     <div
       class="w-full max-w-sm mt-3 lg:w-64 lg:mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-      v-for="(product) in getProducts.data" :key="product.id">
+      v-for="(product) in getProducts.data.slice(0 ,10)" :key="product.id">
       <a href="#">
         <img class="p-8 rounded-t-lg"
           src="https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?size=626&ext=jpg&uid=R116180207&ga=GA1.2.1795545853.1694355761&semt=sph"
@@ -268,6 +273,7 @@
       </div>
     </div>
   </div>
+  <!-- End Product Popular With Skeleton -->
   <div class="flex justify-center items-center lg:mt-12 md:mt-12 mt-6 ml-3">
     <div
       class="flex w-64 items-center justify-center cursor-pointer gap-x-2 px-6 py-2 border-2 border-green-500 text-green-500 text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
