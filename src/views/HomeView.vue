@@ -274,7 +274,7 @@
     </div>
   </div>
   <!-- End Product Popular With Skeleton -->
-  <div class="flex justify-center items-center lg:mt-12 md:mt-12 mt-6 ml-3">
+  <div class="flex justify-center items-center lg:mt-12 md:mt-12 mt-6 mb-28 ml-3">
     <div
       class="flex w-64 items-center justify-center cursor-pointer gap-x-2 px-6 py-2 border-2 border-green-500 text-green-500 text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
       <span class="text-sm font-bold">Lihat Lebih Banyak</span>
@@ -287,7 +287,7 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters,mapActions } from 'vuex';
 
 export default {
   computed: {
