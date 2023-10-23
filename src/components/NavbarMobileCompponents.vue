@@ -1,6 +1,6 @@
 <template>
 	<!-- Navigation Bar -->
-	<div class="px-5 pt-3  bg-white shadow-2xl w-screen mt-4 sticky drop-shadow-2xl bottom-0 lg:hidden md:hidden">
+	<div class="px-5 pt-3  bg-white shadow-2xl w-screen mt-4 fixed drop-shadow-2xl bottom-0 lg:hidden md:hidden">
 
 		<div class="flex flex-row space-x-3 md:space-x-24 md:items-center md:justify-center">
 			<!-- Item #1 -->
