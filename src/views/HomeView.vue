@@ -111,19 +111,19 @@
     </div>
     <!-- cards -->
     
-    <div class="relative mt-0 py-6 lg:py-6 md:py-6 carousel rounded-box w-full h-40 lg:h-full md:h-26">
+    <div class="relative mt-2 py-2 lg:py-6 md:py-6 carousel rounded-box w-full h-35 lg:h-full md:h-26">
       <ul class="-m-3.5 flex h-full" v-for="(categori) in getCategori.slice(0, 10)" :key="categori.id">
         <li
           class="m-3.5 carousel-item cursor-pointer lg:h-52 md:h-32 lg:w-40 md:w-40 h-24 w-24 rounded-xl flex flex-col items-center justify-center text-center duration-300">
           <img class="max-h-20"
             src="https://img.freepik.com/premium-vector/ripe-watermelon-juicy-piece-white-background-isolated_269543-89.jpg?size=626&ext=jpg&uid=R116180207&ga=GA1.2.1795545853.1694355761&semt=ais"
             alt="" />
-          <span class="font-semibold truncate ...">{{ categori.name }}</span>
+          <span class="font-semibold truncate">{{ categori.name }}</span>
         </li>
       </ul>
     </div>
   </section>
-  <hr class="w-screen h-1 mx-auto my-3 lg:my-6 bg-gray-100 border-0 rounded md:my-4 dark:bg-gray-700">
+  <hr class="w-screen h-1 mx-auto my-2 lg:my-6 bg-gray-100 border-0 rounded md:my-4 dark:bg-gray-700">
   <!-- Banner -->
   <div class="flex flex-row mt-6 w-full justify-center">
     <div class="relative">
@@ -274,7 +274,8 @@
     </div>
   </div>
   <!-- End Product Popular With Skeleton -->
-  <div class="flex justify-center items-center lg:mt-12 md:mt-12 mt-6 mb-28 ml-3">
+  <RouterLink to="product">
+  <div class="flex justify-center items-center lg:mt-12 md:mt-12 mt-6 mb-3 ml-3">
     <div
       class="flex w-64 items-center justify-center cursor-pointer gap-x-2 px-6 py-2 border-2 border-green-500 text-green-500 text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
       <span class="text-sm font-bold">Lihat Lebih Banyak</span>
@@ -285,6 +286,16 @@
       </svg>
     </div>
   </div>
+</RouterLink>
+  <!-- Banner -->
+  <div class="flex flex-row mt-2 w-full lg:mt-12 md:mt-12 mb-28">
+    <div class="relative">
+      <img class="w-full lg:h-96 md:h-60 h-28"
+        src="https://images.tokopedia.net/img/cache/1208/NsjrJu/2023/10/2/438ab99b-20a2-40fc-a48a-f95ce361416d.jpg.webp?ect=4g"
+        alt="sofa" />
+    </div>
+  </div>
+  <!-- End Banner -->
 </template>
 <script>
 import { mapGetters,mapActions } from 'vuex';

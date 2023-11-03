@@ -1,29 +1,29 @@
 <template>
   <header class="w-full lg:px-3 sticky top-0 text-gray-700 py-2 bg-white border-t-2 border-gray-100 shadow-sm body-font"
     style="z-index: 999;">
-    <div class="w-auto flex flex-wrap items-center justify-between mx-auto p-4">
-      <a class="hidden md:flex lg:flex items-center font-medium text-gray-900 title-font lg:mb-0">
+    <div class="w-auto flex flex-wrap items-center justify-between mx-auto lg:p-1 p-4">
+      <RouterLink to="/" class="hidden md:flex lg:flex items-center font-medium text-gray-900 title-font lg:mb-0">
         <svg class="w-auto h-5 text-gray-900 fill-current" viewBox="0 0 202 69" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M57.44.672s6.656 1.872 6.656 5.72c0 0-1.56 2.6-3.744 6.552 8.424 1.248 16.744 1.248 23.816-1.976-1.352 7.904-12.688 8.008-26.208 6.136-7.696 13.624-19.656 36.192-19.656 42.848 0 .416.208.624.52.624 4.576 0 17.888-14.352 21.112-18.824 1.144-1.456 4.264.728 3.12 2.392C56.608 53.088 42.152 69 36.432 69c-4.472 0-8.216-5.928-8.216-10.4 0-6.552 11.752-28.08 20.28-42.952-9.984-1.664-20.176-3.64-27.976-3.848-13.936 0-16.64 3.536-17.576 6.032-.104.312-.52.52-.832.312-3.744-7.072-1.456-14.56 14.144-14.56 9.36 0 22.048 4.576 34.944 7.592C54.736 5.04 57.44.672 57.44.672zm46.124 41.08c1.144-1.456 4.264.728 3.016 2.392C100.236 53.088 85.78 69 80.06 69c-4.576 0-8.32-5.928-8.32-10.4v-.208C67.58 64.32 63.524 69 61.34 69c-4.472 0-8.944-4.992-8.944-11.856 0-10.608 15.704-33.072 24.96-33.072 4.992 0 7.384 2.392 8.528 4.576l2.6-4.576s6.656 1.976 6.656 5.824c0 0-13.312 24.336-13.312 30.056 0 .208 0 .624.52.624 4.472 0 17.888-14.352 21.216-18.824zm-40.56 18.72c2.184 0 11.752-13.312 17.368-22.048l4.16-7.488c-8.008-7.904-27.248 29.536-21.528 29.536zm57.564-38.168c-2.184 0-4.992-2.808-4.992-4.784 0-2.912 5.824-14.872 7.28-14.872 2.6 0 6.136 2.808 6.136 6.344 0 2.08-7.176 12.064-8.424 13.312zm-17.68 46.592c-4.472 0-8.216-5.928-8.216-10.4 0-6.656 16.744-34.528 16.744-34.528s6.552 1.976 6.552 5.824c0 0-13.312 24.336-13.312 30.056 0 .208.104.624.624.624 4.472 0 17.888-14.352 21.112-18.824 1.144-1.456 4.264.728 3.12 2.392-6.448 8.944-20.904 24.856-26.624 24.856zM147.244.672s6.656 1.872 6.656 5.72c0 0-25.792 43.784-25.792 53.56 0 .416.208.624.52.624 4.576 0 17.888-14.352 21.112-18.824 1.144-1.456 4.264.728 3.12 2.392C146.412 53.088 131.956 69 126.236 69c-4.472 0-8.216-5.928-8.216-10.4 0-10.4 29.224-57.928 29.224-57.928zM169.7 60.16c3.848-2.392 7.904-6.864 10.816-10.92 6.656-9.464 11.544-20.696 10.504-27.352-.312-3.432-.104-4.056 3.12-2.704 5.2 2.392 11.336 8.632 2.184 22.88-5.2 8.008-12.48 15.288-19.344 19.76-2.704 1.768-6.344 3.328-9.984 4.16-.52.416-1.04.728-1.456.936-1.872 1.352-4.264 2.08-7.592 2.08-14.664 0-16.848-12.272-16.848-16.016 0-2.392 3.224-4.68 4.784-3.744.208.104.312.416.312.624 0 2.808 1.872 13.104 9.984 13.104 7.904 0 3.432-18.304 2.288-27.144-1.456 2.288-3.432 4.992-5.616 8.32-2.6 3.744-5.72 1.456-4.784 0 5.824-8.424 9.152-13.832 11.856-18.616 1.248-2.08 3.328-3.328 6.448-3.328 2.704 0 5.824 3.016 6.864 4.784.312.52 0 1.04-.52 1.144a5.44 5.44 0 00-4.368 5.408c0 6.968 2.6 17.16 1.664 24.856l-.312 1.768z"
             fill-rule="nonzero" />
         </svg>
-      </a>
+      </RouterLink>
       <!-- Search -->
       <nav
-        class="lg:w-max md:w-72 w-48 lg:space-x-4 lg:flex lg:items-center lg:justify-center lg:pl-6 lg:ml-6 text-base md:border-l md:border-gray-200 md:mr-auto md:ml-3 md:pl-3  lg:border-l lg:border-gray-200 lg:mr-auto">
+        class="lg:w-max md:mr-auto md:w-72 w-48 lg:space-x-4 lg:flex lg:items-center lg:justify-center lg:pl-6 lg:ml-6 text-base md:border-l md:border-gray-200 md:ml-3 md:pl-3  lg:border-l lg:border-gray-200">
         <div
-          class="hidden lg:flex cursor-pointer gap-x-2 px-6 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+          class="hidden lg:flex cursor-pointer gap-x-2 px-6 py-2 border-2 border-green-500 text-white bg-green-500 hover:bg-green-800 font-medium text-xs leading-tight uppercase rounded-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
             stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           <span class="text-sm font-medium">Categories</span>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center w-auto">
           <div class="relative w-96">
             <input type="text"
-              class="w-full px-12 py-2 text-gray-700 placeholder-gray-500 border rounded-full focus:outline-none focus:shadow-outline"
+              class="w-11/12 px-12 py-2 text-gray-700 placeholder-gray-500 border rounded-full focus:outline-none focus:shadow-outline"
               placeholder="Search" />
             <div class="absolute top-0 left-0 flex items-center pl-3 h-full">
               <!-- Search icon SVG here -->
@@ -102,7 +102,20 @@
         </div>
       </nav>
       <!-- login and register dekstop mode -->
-      <div
+      <div v-if="isAuthenticated"
+        class="items-center hidden md:w-auto md:text-sm md:inline-flex md:items-center md:justify-center lg:block lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
+        <div
+          class="grid grid-cols-2 gap-2 max-w-sm p-2 lg:w-32 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <img class="w-10 h-10 p-1 ml-2 justify-center items-center rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+            src="https://img.freepik.com/free-vector/smiling-person-crowd_23-2148403860.jpg?size=626&ext=jpg&ga=GA1.1.216278144.1697349302&semt=ais"
+            alt="Bordered avatar">
+            
+            <div class="items-center justify-center text-center">
+              <p class="truncate font-bold text-gray-600 text-center justify-center items-center mt-2">{{ getUser.name }}</p>
+            </div>
+        </div>
+      </div>
+      <div v-else
         class="items-center hidden md:w-auto md:text-sm md:inline-flex md:items-center md:justify-center lg:block lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
         <button type="button"
           class="mr-3 inline-block px-3 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
@@ -134,13 +147,13 @@
             d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
             clip-rule="evenodd" />
         </svg>
-        <span class="text-sm font-medium">Bandung</span>
+          <span class="text-sm font-medium truncate" v-for="(address) in getAddres.data" :key="address.id">{{ address.country }},{{ address.state }}</span>
       </div>
 
       <div class="flex gap-x-8">
         <span class="cursor-pointer py-1 px-auto text-sm font-medium hover:text-green-500">Best seller</span>
         <span class="cursor-pointer py-1 px-auto text-sm font-medium hover:text-green-500">New Releases</span>
-        <span class="cursor-pointer hidden md:block lg:block py-1 px-2 md:px-0 text-sm font-medium hover:text-green-500"
+        <span class="cursor-pointer hidden md:block md:mx-auto lg:block py-1 px-2 text-sm font-medium hover:text-green-500"
           v-for="(categori) in getCategori.slice(0, 5)" :key="categori.id">
           {{ categori.name }}
         </span>
@@ -250,17 +263,15 @@
       <hr class="mt-2 mb-3 w-full">
 
       <ul class="">
-        <!-- <li>
-          <a class="flex py-2 font-medium space-x-2 mr-3 items-center text-gray-400">
-          <span class="text-sm text-gray-500">Acount Settings</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          </a>
-          </li> -->
         <li>
-          <div
+          <div v-if="isAuthenticated"
+            class="items-center mt-3 block md:hidden md:w-auto md:text-sm md:items-center md:justify-center lg:hidden lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
+            <button @click="logout" type="button"
+              class="inline-block px-3 py-2 border-2 bg-green-500 border-green-500 text-white font-medium text-xs leading-tight uppercase rounded-lg hover:bg-green-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              Log Out
+            </button>
+          </div>
+          <div v-else
             class="items-center mt-3 block md:hidden md:w-auto md:text-sm md:items-center md:justify-center lg:hidden lg:h-full lg:pl-6 lg:ml-6 lg:border-l lg:border-gray-200">
             <button type="button"
               class="mr-3 inline-block px-3 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded-lg hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
@@ -277,18 +288,26 @@
   </nav>
 </template>
 <script>
+import { RouterLink } from 'vue-router';
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  computed: {
-    ...mapGetters('kategori', ['getCategori']),
-  },
-  methods: {
-    ...mapActions('kategori', ['fetchCategori']),
-  },
-  created() {
-    this.fetchCategori();
-  },
+    computed: {
+        ...mapGetters('kategori', ['getCategori']),
+        ...mapGetters('auth', ['isAuthenticated']),
+        ...mapGetters('user', ['getUser', 'getAddres']),
+    },
+    methods: {
+        ...mapActions('kategori', ['fetchCategori']),
+        ...mapActions('auth', ['logout']),
+        ...mapActions('user', ['fetchUser', 'fetchUserAddress']),
+    },
+    created() {
+        this.fetchCategori();
+        this.fetchUser();
+        this.fetchUserAddress();
+    },
+    components: { RouterLink }
 }
 </script>
 
